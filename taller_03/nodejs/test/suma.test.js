@@ -1,0 +1,1 @@
+const suma = require('../ejercicio');

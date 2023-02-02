@@ -9,4 +9,7 @@ const saludo = "hola";
 app.get("/ping", (req, respuesta) => {
     respuesta.send("pong");
 });
+app.get("/user", function (req, res) {
+    res.status(200).json({ name: "john" });
+});
 exports.default = app;
