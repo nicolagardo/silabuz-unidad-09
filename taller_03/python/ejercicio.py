@@ -36,10 +36,16 @@ def test_is_even():
         (1, False)
     ]
 
+    for i, expected in test_cases:
+        result = is_even(i)
+        assert result == expected, f"Para i = {i}, se esperaba {expected} pero se obtuvo {result}"
+        
     for n, expected in test_cases:
         result = is_even(n)
         assert result == expected, f"Para n = {n}, se esperaba {expected} pero se obtuvo {result}"
 
+    if test_cases:
+        pass
 
 
 if __name__ == '__main__':

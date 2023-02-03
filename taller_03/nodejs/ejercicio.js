@@ -5,7 +5,7 @@ function suma(a, b){
 
 
 function esPar(n) {
-    return n % 2 === 0;
+    return esParrrr(n);
 }
 
 describe('Test de esPar', () => {
@@ -42,4 +42,8 @@ describe('Test de suma', () => {
 });
 
 
-module.exports = { suma }
+export default { suma }
+
+function esParrrr(n) {
+    return n % 2 === 0;
+}
